@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {
   CircleUserRound,
   MenuIcon,
+  ShoppingCart,
   XIcon,
 } from 'lucide-react';
 import {
@@ -15,7 +16,7 @@ import {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
-    <header className="fixed top-0 left-0 w-full text-white z-40 flex items-center justify-between p-6 lg:px-12">
+    <header className="fixed top-0 left-0 w-full bg-black max-lg:shadow-lg lg:bg-transparent text-white z-40 flex items-center justify-between p-6 lg:px-12">
       <Link to="/" aria-label="Go to homepage">
         <p className="text-white text-4xl font-bold">
           pr<span className="text-blue-500">i</span>
@@ -103,6 +104,13 @@ const Navbar = () => {
 
       {/* quick actions */}
       <div className="hidden lg:flex items-center gap-4">
+        {/* shopping cart */}
+        <div aria-label="Shopping cart" className="relative mr-4">
+          <ShoppingCart />
+          <div className="absolute -top-3 -right-3 bg-orange-400 rounded-full w-full text-center text-black">
+            0
+          </div>
+        </div>
         <Link
           to="/"
           className="px-4 py-2 border border-orange-400 rounded-md hover:bg-orange-400 hover:text-black hover:font-semibold transition-all duration-300 ease-in-out"
@@ -122,6 +130,14 @@ const Navbar = () => {
 
       {/* mobile menu icon + user icon */}
       <div className="flex items-center gap-2 lg:hidden">
+        {/* shopping cart */}
+        <div aria-label="Shopping cart" className="relative mr-1 lg:mr-4">
+          <ShoppingCart />
+          <div className="absolute -top-3 -right-3 bg-orange-400 rounded-full w-full text-center text-black">
+            0
+          </div>
+        </div>
+
         <CircleUserRound
           className="max-lg:ml-4 lg:hidden cursor-pointer"
           aria-label="User profile & Login"
