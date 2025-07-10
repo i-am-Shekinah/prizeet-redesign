@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import {
+  CircleUserRound,
   MenuIcon,
   XIcon,
 } from 'lucide-react';
@@ -113,10 +114,14 @@ const Navbar = () => {
         {/* <Link to="/">Join</Link> */}
       </div>
 
-      <MenuIcon
-        className="max-lg:ml-4 lg:hidden w-6 h-6 cursor-pointer"
-        onClick={() => setIsMenuOpen(true)}
-      />
+      {/* mobile menu icon + user icon */}
+      <div className="flex items-center gap-2 lg:hidden">
+        <CircleUserRound className="max-lg:ml-4 lg:hidden cursor-pointer" />
+        <MenuIcon
+          className="max-lg:ml-4 lg:hidden w-6 h-6 cursor-pointer"
+          onClick={() => setIsMenuOpen(true)}
+        />
+      </div>
     </header>
   );
 };
