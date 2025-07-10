@@ -61,11 +61,7 @@ npm run test
 
 ## 🧠 Design Decisions
 
-- **Next.js** chosen for future scalability, routing, and deployment ease.
-- **Tailwind CSS** allows rapid and consistent styling with utility-first classes.
-- **shadcn/ui** used sparingly to keep the look modern but custom.
-- **Testing** done for key interactive components like CTA buttons and navigation.
-- **Animations** I opted for AOS.js due to time constraints, but I’ve experimented with Framer Motion previously and would refactor for full motion control in a production scenario.
+- **Header:** restructured the nav items to showcase the active page, and also make the nav items more interactive and user-friendly. The 'Become a vendor' tab was made into a CTA button to draw user attention while following modern best practices.
 
 ## 📁 Folder Structure
 

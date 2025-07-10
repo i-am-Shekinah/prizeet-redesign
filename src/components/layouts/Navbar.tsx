@@ -16,7 +16,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
     <header className="fixed top-0 left-0 w-full text-white z-40 flex items-center justify-between p-6 lg:px-12">
-      <Link to="/">
+      <Link to="/" aria-label="Go to homepage">
         <p className="text-white text-4xl font-bold">
           pr<span className="text-blue-500">i</span>
           <span className="text-orange-400">z</span>eet
@@ -28,10 +28,13 @@ const Navbar = () => {
         className={`max-lg:absolute max-lg:top-0 max-lg:left-0 max-lg:font-medium max-lg:text-lg z-50 flex flex-col lg:flex-row items-center max-lg:justify-center gap-8 lg:px-8 lg:rounded-full lg:py-3 max-lg:h-screen min-lg:rounded-full backdrop-blur-2xl bg-black/70 lg:bg-white/10 lg:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${
           isMenuOpen ? "max-lg:w-full" : "max-lg:w-0"
         }`}
+        role="navigation"
+        aria-label="Main navigation"
       >
         <XIcon
           className="lg:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer"
           onClick={() => setIsMenuOpen(false)}
+          aria-label="Close menu"
         />
         <NavLink
           to="/"
@@ -92,6 +95,7 @@ const Navbar = () => {
             scrollTo(0, 0);
           }}
           className="lg:hidden"
+          aria-label="Become a vendor"
         >
           Become a vendor
         </Link>
@@ -102,12 +106,14 @@ const Navbar = () => {
         <Link
           to="/"
           className="px-4 py-2 border border-orange-400 rounded-md hover:bg-orange-400 hover:text-black hover:font-semibold transition-all duration-300 ease-in-out"
+          aria-label="Become a vendor"
         >
           Become a vendor
         </Link>
         <Link
           to="/"
           className="px-4 py-2 border border-orange-400 bg-orange-400 rounded-md text-black hover:font-semibold hover:bg-orange-500 hover:border-orange-500 transition-all duration-500 ease-in-out"
+          aria-label="Login to your account"
         >
           Login
         </Link>
@@ -116,10 +122,14 @@ const Navbar = () => {
 
       {/* mobile menu icon + user icon */}
       <div className="flex items-center gap-2 lg:hidden">
-        <CircleUserRound className="max-lg:ml-4 lg:hidden cursor-pointer" />
+        <CircleUserRound
+          className="max-lg:ml-4 lg:hidden cursor-pointer"
+          aria-label="User profile & Login"
+        />
         <MenuIcon
           className="max-lg:ml-4 lg:hidden w-6 h-6 cursor-pointer"
           onClick={() => setIsMenuOpen(true)}
+          aria-label="Open menu"
         />
       </div>
     </header>
