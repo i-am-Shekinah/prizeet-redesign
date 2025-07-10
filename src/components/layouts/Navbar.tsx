@@ -1,10 +1,123 @@
-import logo from '@/assets/logo.svg';
+import { useState } from 'react';
+
+import {
+  MenuIcon,
+  XIcon,
+} from 'lucide-react';
+import {
+  Link,
+  NavLink,
+} from 'react-router-dom';
+
+// import logo from '@/assets/logo.svg';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
-    <nav>
-      <img src={logo} alt="Prizeet logo" />
-    </nav>
+    <header className="fixed top-0 left-0 w-full text-white z-40 flex items-center justify-between p-6 lg:px-12">
+      <Link to="/">
+        <p className="text-white text-4xl font-bold">
+          pr<span className="text-blue-500">i</span>
+          <span className="text-orange-400">z</span>eet
+        </p>
+        {/* <img src={logo} alt="Prizeet logo" /> */}
+      </Link>
+
+      <nav
+        className={`max-lg:absolute max-lg:top-0 max-lg:left-0 max-lg:font-medium max-lg:text-lg z-50 flex flex-col lg:flex-row items-center max-lg:justify-center gap-8 lg:px-8 lg:rounded-full lg:py-3 max-lg:h-screen min-lg:rounded-full backdrop-blur-2xl bg-black/70 lg:bg-white/10 lg:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${
+          isMenuOpen ? "max-lg:w-full" : "max-lg:w-0"
+        }`}
+      >
+        <XIcon
+          className="lg:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer"
+          onClick={() => setIsMenuOpen(false)}
+        />
+        <NavLink
+          to="/"
+          onClick={() => {
+            setIsMenuOpen(false);
+            scrollTo(0, 0);
+          }}
+          className={({ isActive }) =>
+            `relative px-4 after:content-[''] after:left-1/2 after:-translate-x-1/2 after:origin-center after:absolute after:-bottom-1 after:w-0 after:h-[2px]
+          ${
+            isActive
+              ? "font-semibold text-orange-400"
+              : "font-light opacity-75 after:bg-white after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+          }`
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          onClick={() => {
+            setIsMenuOpen(false);
+            scrollTo(0, 0);
+          }}
+          className={({ isActive }) =>
+            `relative px-4 after:content-[''] after:left-1/2 after:-translate-x-1/2 after:origin-center after:absolute after:-bottom-1 after:w-0 after:h-[2px]
+          ${
+            isActive
+              ? "font-semibold text-orange-400"
+              : "font-light opacity-75 after:bg-white after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+          }`
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/contact"
+          onClick={() => {
+            setIsMenuOpen(false);
+            scrollTo(0, 0);
+          }}
+          className={({ isActive }) =>
+            `relative px-4 after:content-[''] after:left-1/2 after:-translate-x-1/2 after:origin-center after:absolute after:-bottom-1 after:w-0 after:h-[2px]
+          ${
+            isActive
+              ? "font-semibold text-orange-400"
+              : "font-light opacity-75 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+          }`
+          }
+        >
+          Contact
+        </NavLink>
+
+        <Link
+          to="/"
+          onClick={() => {
+            setIsMenuOpen(false);
+            scrollTo(0, 0);
+          }}
+          className="lg:hidden"
+        >
+          Become a vendor
+        </Link>
+      </nav>
+
+      {/* quick actions */}
+      <div className="hidden lg:flex items-center gap-4">
+        <Link
+          to="/"
+          className="px-4 py-2 border border-orange-400 rounded-md hover:bg-orange-400 hover:text-black hover:font-semibold transition-all duration-300 ease-in-out"
+        >
+          Become a vendor
+        </Link>
+        <Link
+          to="/"
+          className="px-4 py-2 border border-orange-400 bg-orange-400 rounded-md text-black hover:font-semibold hover:bg-orange-500 hover:border-orange-500 transition-all duration-500 ease-in-out"
+        >
+          Login
+        </Link>
+        {/* <Link to="/">Join</Link> */}
+      </div>
+
+      <MenuIcon
+        className="max-lg:ml-4 lg:hidden w-6 h-6 cursor-pointer"
+        onClick={() => setIsMenuOpen(true)}
+      />
+    </header>
   );
 };
 
