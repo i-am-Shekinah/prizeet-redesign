@@ -17,10 +17,15 @@ const HeroSearch = () => {
           setQuery={setQuery}
         />
         <div
+          data-aos="fade-up"
+          data-aos-delay="350"
           onClick={() => setShowFilters((prev) => !prev)}
           className="bg-orange-400 rounded-md p-4 cursor-pointer hover:bg-orange-500 transition-colors duration-200"
         >
-          <SlidersHorizontal className="text-black cursor-pointer" />
+          <SlidersHorizontal
+            className="text-black cursor-pointer"
+            aria-label="filter products"
+          />
         </div>
       </div>
 
@@ -109,7 +114,11 @@ const HeroSearch = () => {
       </div>
 
       {/* popular searches */}
-      <div className="flex flex-wrap gap-4 items-center mt-4">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="650"
+        className="flex flex-wrap gap-4 items-center mt-4"
+      >
         <p className="text-white">Popular searches:</p>
         <p
           className="bg-white px-4 rounded-full cursor-pointer"

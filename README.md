@@ -63,6 +63,10 @@ npm run test
 
 - **Header:** restructured the nav items to showcase the active page, and also make the nav items more interactive and user-friendly. The 'Become a vendor' tab was made into a CTA button to draw user attention while following modern best practices.
 
+- **Hero Section:** introduced an hero image to trigger a connection with users.
+
+- **What we offer:** adjusted the colors to better match the current theme. I also noticed an error in the number of steps, so that was also adjusted.
+
 ## 📁 Folder Structure
 
 ```

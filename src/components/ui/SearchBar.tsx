@@ -44,6 +44,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
   };
   return (
     <form
+      data-aos="fade-up"
+      data-aos-delay="350"
       ref={formRef}
       action={action}
       method={method}

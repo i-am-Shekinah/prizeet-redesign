@@ -105,7 +105,12 @@ const Navbar = () => {
       {/* quick actions */}
       <div className="hidden lg:flex items-center gap-4">
         {/* shopping cart */}
-        <div aria-label="Shopping cart" className="relative mr-4">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="450"
+          aria-label="Shopping cart"
+          className="relative mr-4"
+        >
           <ShoppingCart />
           <div className="absolute -top-3 -right-3 bg-orange-400 rounded-full w-full text-center text-black">
             0
@@ -113,14 +118,18 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="px-4 py-2 border border-orange-400 rounded-md hover:bg-orange-400 hover:text-black hover:font-semibold transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          className="px-4 py-2 border border-orange-400 rounded-md hover:bg-orange-400 hover:text-black transition-all duration-300 ease-in-out"
           aria-label="Become a vendor"
         >
           Become a vendor
         </Link>
         <Link
           to="/"
-          className="px-4 py-2 border border-orange-400 bg-orange-400 rounded-md text-black hover:font-semibold hover:bg-orange-500 hover:border-orange-500 transition-all duration-500 ease-in-out"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          className="px-4 py-2 border border-orange-400 bg-orange-400 rounded-md text-black hover:bg-orange-500 hover:border-orange-500 transition-all duration-500 ease-in-out"
           aria-label="Login to your account"
         >
           Login
