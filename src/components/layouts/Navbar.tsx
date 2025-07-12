@@ -18,7 +18,7 @@ const Navbar = () => {
       </Link>
 
       <nav
-        className={`max-lg:absolute max-lg:top-0 max-lg:left-0 max-lg:font-medium max-lg:text-lg z-50 flex flex-col lg:flex-row items-center max-lg:justify-center gap-8 lg:px-8 lg:rounded-full lg:py-3 max-lg:h-screen min-lg:rounded-full backdrop-blur-2xl bg-black/70 lg:bg-white/10 lg:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${
+        className={`max-lg:fixed max-lg:inset-0 max-lg:h-dvh max-lg:font-medium max-lg:text-lg z-50 flex flex-col lg:flex-row items-center max-lg:justify-center gap-8 lg:px-8 lg:rounded-full lg:py-3 min-lg:rounded-full backdrop-blur-2xl bg-black/70 lg:bg-white/10 lg:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${
           isMenuOpen ? "max-lg:w-full" : "max-lg:w-0"
         }`}
         role="navigation"
@@ -121,7 +121,7 @@ const Navbar = () => {
           to="/"
           data-aos="fade-up"
           data-aos-delay="150"
-          className="px-4 py-2 border border-orange-400 bg-orange-400 rounded-md text-black hover:bg-orange-500 hover:border-orange-500 transition-all duration-500 ease-in-out"
+          className="px-4 py-2 border border-orange-400 bg-orange-400 rounded-md text-black hover:bg-orange-500 hover:border-orange-500 transition-all duration-500 ease-in-out cursor-pointer"
           aria-label="Login to your account"
         >
           Login

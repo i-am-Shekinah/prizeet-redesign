@@ -81,7 +81,7 @@ const CardPlusImage = () => {
         <img
           src={forBuyers}
           alt="Card image for buyers"
-          className="max-lg:rounded-md lg:rounded-tr-md lg:rounded-br-md h-full w-auto object-cover"
+          className="max-lg:rounded-md lg:rounded-tr-md lg:rounded-br-md h-full w-full object-cover"
         />
       </div>
 
@@ -90,7 +90,7 @@ const CardPlusImage = () => {
         <img
           src={forVendors}
           alt="Card image for buyers"
-          className="max-lg:rounded-md lg:rounded-tl-md lg:rounded-bl-md h-full w-auto object-cover"
+          className="max-lg:rounded-md lg:rounded-tl-md lg:rounded-bl-md h-full w-full object-cover"
         />
         <div className="max-lg:absolute w-full bg-gradient-to-t from-blue-500 via-blue-500 to-transparent lg:bg-blue-500 p-8 text-black h-full max-lg:rounded-md lg:rounded-tr-md lg:rounded-br-md">
           <p className="max-lg:text-white">For vendors</p>

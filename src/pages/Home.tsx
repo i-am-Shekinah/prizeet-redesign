@@ -1,5 +1,6 @@
 import Hero from "../components/sections/Hero";
 import LatestSmartphones from "../components/sections/LatestSmartphones";
+import TailoredExperiences from "../components/sections/TailoredExperiences";
 import WhatWeOffer from "../components/sections/WhatWeOffer";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <WhatWeOffer />
       <LatestSmartphones />
+      <TailoredExperiences />
     </>
   );
 };
