@@ -92,7 +92,7 @@ const CardPlusImage = () => {
           alt="Card image for buyers"
           className="max-lg:rounded-md lg:rounded-tl-md lg:rounded-bl-md h-full w-auto object-cover"
         />
-        <div className="absolute bg-gradient-to-t from-blue-500 via-blue-500 to-transparent lg:bg-blue-500 p-8 text-black h-full max-lg:rounded-md lg:rounded-tr-md lg:rounded-br-md">
+        <div className="max-lg:absolute w-full bg-gradient-to-t from-blue-500 via-blue-500 to-transparent lg:bg-blue-500 p-8 text-black h-full max-lg:rounded-md lg:rounded-tr-md lg:rounded-br-md">
           <p className="max-lg:text-white">For vendors</p>
           <p className="max-lg:text-white max-lg:text-2xl text-5xl mt-4 max-w-[400px]">
             Start selling in{" "}

@@ -1,10 +1,10 @@
-import BlurCircle from '../ui/BlurCircle';
-import CardPlusImage from '../ui/CardPlusImage';
+import BlurCircle from "../ui/BlurCircle";
+import CardPlusImage from "../ui/CardPlusImage";
 
 const WhatWeOffer = () => {
   return (
     <>
-      <section className="relative px-6 lg:px-12 py-24 bg-black text-white leading-loose">
+      <section className="overflow-x-hidden relative px-6 lg:px-12 py-24 bg-black text-white leading-loose">
         <BlurCircle top="0" right="0" />
         <h2
           data-aos="fade-up"

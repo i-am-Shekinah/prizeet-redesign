@@ -1,22 +1,14 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import {
-  CircleUserRound,
-  MenuIcon,
-  ShoppingCart,
-  XIcon,
-} from 'lucide-react';
-import {
-  Link,
-  NavLink,
-} from 'react-router-dom';
+import { CircleUserRound, MenuIcon, ShoppingCart, XIcon } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
 
 // import logo from '@/assets/logo.svg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
-    <header className="fixed top-0 left-0 w-full bg-black max-lg:shadow-lg lg:bg-transparent text-white z-40 flex items-center justify-between p-6 lg:px-12">
+    <header className="fixed top-0 left-0 w-full overflow-x-hidden bg-black max-lg:shadow-lg lg:bg-transparent text-white z-50 flex items-center justify-between p-6 lg:px-12">
       <Link to="/" aria-label="Go to homepage">
         <p className="text-white text-4xl font-bold">
           pr<span className="text-blue-500">i</span>
