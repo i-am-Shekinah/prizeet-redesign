@@ -1,15 +1,13 @@
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import AOS from 'aos';
-import {
-  Route,
-  Routes,
-} from 'react-router-dom';
+import AOS from "aos";
+import { Route, Routes } from "react-router-dom";
 
-import Navbar from './components/layouts/Navbar';
-import Home from './pages/Home';
+import Navbar from "./components/layouts/Navbar";
+import BackToTop from "./components/ui/BackToTop";
+import Home from "./pages/Home";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +23,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <BackToTop />
     </>
   );
 };
