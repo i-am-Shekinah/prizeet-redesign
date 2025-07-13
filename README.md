@@ -61,11 +61,25 @@ npm run test
 
 ## 🧠 Design Decisions
 
-- **Header:** restructured the nav items to showcase the active page, and also make the nav items more interactive and user-friendly. The 'Become a vendor' tab was made into a CTA button to draw user attention while following modern best practices.
+### 🧭 Navigation (Header)
 
-- **Hero Section:** introduced an hero image to trigger a connection with users.
+- Redesigned for better interactivity and visual clarity.
+- "Become a Vendor" now appears as a prominent call-to-action (CTA) button to boost user engagement.
+- Restructured the nav items to highlight the active page.
 
-- **What we offer:** adjusted the colors to better match the current theme. I also noticed an error in the number of steps, so that was also adjusted.
+### 🖼️ Hero Section
+
+- Introduced a hero image to establish immediate visual interest and emotional connection.
+
+### 📦 What we offer
+
+adjusted the colors to better match the current theme. I also noticed an error in the number of steps, so that was also adjusted.
+
+### ❓ FAQs
+
+- Enhanced visual hierarchy by vertically centering content.
+- Improves readability and overall polish for a more accessible layout.
+- Reduces cognitive fatigue
 
 ## 📁 Folder Structure
 
@@ -80,7 +94,7 @@ src/
 
 ## 📷 Deliverables
 
-- 🔗 Live Demo: [`vercel-deployment-link`](https://prizeet-redesign.vercel.app/)
+- 🔗 Live Demo: [`vercel-deployment-link`](https://prizeet-redesignio.vercel.app/)
 
 ## 👨‍💻 Author
 
