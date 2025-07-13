@@ -23,14 +23,22 @@ const TailoredExperiences = () => {
         </h2>
 
         {/* perks */}
-        <div className="grid grid-cols1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {/* trusted payments */}
           <div className="bg-orange-400 rounded-md py-8 px-4 text-black">
-            <div className="flex gap-2 items-center mb-2">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              className="flex gap-2 items-center mb-2"
+            >
               <CreditCard />
               <p className="font-semibold">Trusted Payment</p>
             </div>
-            <p className="opacity-75 font-light text-justify">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="350"
+              className="opacity-75 font-light text-justify"
+            >
               Pay with ease through WhatsApp! Once your invoice is ready,
               complete your purchase securely via direct chat — fast, safe, and
               personal. For your protection, you'll also receive a two-factor
@@ -54,12 +62,20 @@ const TailoredExperiences = () => {
           </div>
 
           {/* customer support */}
-          <div className="bg-blue-500 rounded-md py-8 px-4">
-            <div className="flex gap-2 items-center mb-2">
+          <div className="bg-blue-500 text-black rounded-md py-8 px-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              className="flex gap-2 items-center mb-2"
+            >
               <MessageCircleQuestionMark />
               <p className="font-semibold">24/7 Customer Support</p>
             </div>
-            <p className="opacity-75 font-light text-justify">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="350"
+              className="opacity-75 font-light text-justify"
+            >
               Enjoy peace of mind with our 24/7 Customer Support, ready to
               assist you anytime, any day. Need help?{" "}
               <a
@@ -73,11 +89,19 @@ const TailoredExperiences = () => {
 
           {/* advanced search */}
           <div className="bg-orange-400 rounded-md py-8 px-4 text-black">
-            <div className="flex gap-2 items-center mb-2">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              className="flex gap-2 items-center mb-2"
+            >
               <Search />
               <p className="font-semibold">Advanced Search Filters</p>
             </div>
-            <p className="opacity-75 font-light text-justify">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="350"
+              className="opacity-75 font-light text-justify"
+            >
               Refine your shopping experience with our Advanced Search Filters,
               allowing you to easily find exactly what you're looking for by
               brand, price, features, and more!
@@ -85,12 +109,20 @@ const TailoredExperiences = () => {
           </div>
 
           {/* order tracking */}
-          <div className="bg-blue-500 rounded-md py-8 px-4">
-            <div className="flex gap-2 items-center mb-2">
+          <div className="bg-blue-500 text-black rounded-md py-8 px-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              className="flex gap-2 items-center mb-2"
+            >
               <TruckElectric />
               <p className="font-semibold">Order Tracking</p>
             </div>
-            <p className="opacity-75 font-light text-justify">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="350"
+              className="opacity-75 font-light text-justify"
+            >
               Stay updated on your purchase with our real-time Order Tracking
               feature, ensuring you know exactly when your items will arrive!
             </p>
@@ -98,23 +130,39 @@ const TailoredExperiences = () => {
 
           {/* Wishlist */}
           <div className="bg-orange-400 rounded-md py-8 px-4 text-black">
-            <div className="flex gap-2 items-center mb-2">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              className="flex gap-2 items-center mb-2"
+            >
               <HeartPlus />
               <p className="font-semibold">Wishlist & Save for Later</p>
             </div>
-            <p className="opacity-75 font-light text-justify">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="350"
+              className="opacity-75 font-light text-justify"
+            >
               Save your favorite items for later and create your perfect
               wishlist to make shopping a breeze!
             </p>
           </div>
 
           {/* stock notifications */}
-          <div className="bg-blue-500 rounded-md py-8 px-4">
-            <div className="flex gap-2 items-center mb-2">
+          <div className="bg-blue-500 text-black rounded-md py-8 px-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              className="flex gap-2 items-center mb-2"
+            >
               <BellDot />
               <p className="font-semibold">Back-in-Stock Notifications</p>
             </div>
-            <p className="opacity-75 font-light text-justify">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="350"
+              className="opacity-75 font-light text-justify"
+            >
               Sign up for Back-in-Stock Notifications and be the first to know
               when your favorite items are available again!
             </p>
