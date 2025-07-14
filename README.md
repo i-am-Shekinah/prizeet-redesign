@@ -73,13 +73,25 @@ npm run test
 
 ### 📦 What we offer
 
-adjusted the colors to better match the current theme. I also noticed an error in the number of steps, so that was also adjusted.
+- Adjusted the color palette for consistency with the site’s theme.
+- Fixed a discrepancy in the number of steps presented for clearer communication.
+
+### Tailored Experiences
+
+- Restructured layout for a more intuitive flow for users
+- Utilized cards for each experience to make it easier for users to consume information
 
 ### ❓ FAQs
 
 - Enhanced visual hierarchy by vertically centering content.
 - Improves readability and overall polish for a more accessible layout.
 - Reduces cognitive fatigue
+
+### Back to Top Component
+
+- Helps users quickly return to the top without manually scrolling, especially useful on content-heavy or infinite scroll pages.
+- Assists users with limited mobility or on touch devices, making navigation smoother and more user-friendly.
+- Improve overall user experience on really long pages
 
 ## 📁 Folder Structure
 
