@@ -1,4 +1,5 @@
-import { Heart } from "lucide-react";
+import { HeartPlus } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
   imgUrl: string[];
@@ -15,7 +16,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <>
-      <div className="group relative rounded-xl px-7 py-6 bg-orange-400 hover:cursor-pointer shadow-md hover:border-white hover:border-2 transition-all duration-200 ease-linear text-black">
+      <Link
+        to="/"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="group relative rounded-xl px-7 py-6 bg-orange-400 hover:cursor-pointer shadow-md hover:border-white hover:border-2 transition-all duration-200 ease-linear text-black"
+      >
         <div className="relative w-full h-full">
           <img
             src={imgUrl[0]}
@@ -23,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             className="mx-auto"
           />
         </div>
-        <Heart
+        <HeartPlus
           className="hidden group-hover:block absolute text-white size-7 top-6 right-6"
           aria-label="Add to wishlist"
         />
@@ -38,7 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </span>
           ))}
         </div>
-      </div>
+      </Link>
     </>
   );
 };
