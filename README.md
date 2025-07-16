@@ -126,7 +126,7 @@ src/
 
 ## 📷 Deliverables
 
-- 🔗 Live Demo: [`vercel-deployment-link`](https://prizeet-redesignio.vercel.app/)
+- 🔗 Live Demo: [https://prizeet-redesignio.vercel.app](https://prizeet-redesignio.vercel.app/)
 
 ## 👨‍💻 Author
 
