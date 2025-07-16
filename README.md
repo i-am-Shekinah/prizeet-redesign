@@ -47,16 +47,23 @@ npm run test
 ## 📱 Responsiveness
 
 - Fully mobile-friendly
+
 - Supports tablets and desktop layouts
+
 - Designed with mobile-first principles
 
 ## ✨ Key Features
 
 - Redesigned hero, features, and CTA sections
+
 - Clear visual hierarchy and layout improvements
+
 - Accessible navigation and ARIA labels
+
 - Static content placeholders for scalability
+
 - Modern animations (Framer Motion)
+
 - Component-based architecture
 
 ## 🧠 Design Decisions
@@ -64,7 +71,9 @@ npm run test
 ### 🧭 Navigation (Header)
 
 - Redesigned for better interactivity and visual clarity.
+
 - "Become a Vendor" now appears as a prominent call-to-action (CTA) button to boost user engagement.
+
 - Restructured the nav items to highlight the active page.
 
 ### 🖼️ Hero Section
@@ -74,11 +83,22 @@ npm run test
 ### 📦 What we offer
 
 - Adjusted the color palette for consistency with the site’s theme.
+
 - Fixed a discrepancy in the number of steps presented for clearer communication.
+
+### 📱 Latest Smartphones
+
+- Switched from a horizontal scrollable list to a grid layout.
+- Grid layout allows users to view multiple smartphones at once, improving visibility.
+
+- Desktop users are less inclined to scroll horizontally, making grids more intuitive.
+
+- Horizontal scrollbars can negatively impact the aesthetic of desktop interfaces.
 
 ### Tailored Experiences
 
 - Restructured layout for a more intuitive flow for users
+
 - Utilized cards for each experience to make it easier for users to consume information
 
 ### ❓ FAQs
@@ -87,7 +107,7 @@ npm run test
 - Improves readability and overall polish for a more accessible layout.
 - Reduces cognitive fatigue
 
-### Back to Top Component
+### 🔝 Back to Top Component
 
 - Helps users quickly return to the top without manually scrolling, especially useful on content-heavy or infinite scroll pages.
 - Assists users with limited mobility or on touch devices, making navigation smoother and more user-friendly.
